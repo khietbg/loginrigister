@@ -22,7 +22,7 @@
                     <a id="register" class="nav-link active" aria-current="page" href="form-login/register.html">Register</a>
                 </li>
                 <li class="nav-item">
-                    <a id="login" class="nav-link" href="login.html">Login</a>
+                    <a id="login" class="nav-link" href="form-login/login.html">Login</a>
                 </li>
                 <li id="dropdown" class="nav-item dropdown">
                     <a  class="nav-link dropdown-toggle" href="#" id="username" role="button" data-bs-toggle="dropdown" aria-expanded="false">
@@ -176,7 +176,8 @@
     <!-- Copyright -->
 </footer>
 <script>
-    let name = localStorage.getItem("namKey")
+    let name = localStorage.getItem("nameKey")
+    console.log("name----", name)
     if (name != null){
         document.querySelector("#login").innerText ="";
         document.querySelector("#register").innerText ="";
@@ -185,7 +186,7 @@
         document.querySelector("#dropdown").style.display="none"
     }
     function logOut(){
-     localStorage.removeItem("namKey");
+     localStorage.removeItem("nameKey");
         location.reload();
     }
 </script>

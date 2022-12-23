@@ -79,17 +79,18 @@
     }
     function validate(){
         username = document.querySelector("#username").value;
-        if (username.trim()==""){
+            if (username.trim()==""){
             checkValidate = false;
             document.querySelector("#validate_usename").innerHTML = "<label style='color: red'>vui long nhap username!</label>"
-        }else {
+        }else {       checkValidate = true;
             document.querySelector("#validate_usename").innerHTML =""
         }
-        username = document.querySelector("#password").value;
+        password = document.querySelector("#password").value;
         if (password.trim()==""){
             checkValidate = false;
             document.querySelector("#validate_password").innerHTML = "<label style='color: red'>vui long nhap password!</label>"
         }else {
+            checkValidate = true;
             document.querySelector("#validate_password").innerHTML =""
         }
     }
@@ -106,8 +107,7 @@
             for (let i = 0; i < listUser.length; i++) {
                 if (username == listUser[i].username && password == listUser[i].password) {
                     checkLogin = true;
-                    let name = findByUsername(username).name;
-                    localStorage.setItem("nameKey",name);
+
                     break;
 
                 }else {
@@ -115,6 +115,8 @@
                 }
             }
             if (checkLogin){
+                let name = findByUsername(username).name;
+                localStorage.setItem("nameKey",name);
                 location.href="/index.html"
             }else {
                 document.querySelector("#login").innerText = "tai khoan hoac mat khau k chinh xac! vui long nhap lai!"

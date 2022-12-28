@@ -14,8 +14,26 @@
     <title>Title</title>
     <script src="Student.js"></script>
 </head>
-<body style="background-image: url('img/cherry-blossoms-spring-chureito-pagoda-fuji-mountain-japan_335224-213.jpg.webp')">
-<nav class="navbar navbar-expand-lg navbar-light" style="background-color: #cebad0; height: 100px;   background-image: url('img/00e99a96adebb53b_947d3bf2f8b6319b_22220615480373682154671.jpg')" >
+<style>
+    .image {
+        display: flex;
+
+    }
+
+    .img-items {
+        margin: 16px;
+        border: 1px solid #cccc;
+        padding: 2%;
+    }
+
+    .img {
+        height: 250px;
+        width: 300px;
+    }
+</style>
+<body style=" background-image: url('img/home/anh10.jpg');background-size: 2000px 1000px">
+<nav class="navbar navbar-expand-lg navbar-light"
+     style=" backdrop-filter: blur(8px);background-color: #cebad0; height: 70px; background-image: url('img/home/anh20.jpg')">
     <div class="container-fluid">
         <a class="navbar-brand; btn btn-danger" href="#">DU HỌC MEIJI</a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
@@ -25,15 +43,14 @@
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                 <li class="nav-item">
-                    <a id="register" class="nav-link active" aria-current="page" href="form-login/register.html">ĐĂNG KÝ</a>
+                    <a id="register" class="nav-link active" aria-current="page" href="form-login/register.html">ĐĂNG
+                        KÝ</a>
                 </li>
                 <li class="nav-item">
                     <a id="login" class="nav-link" href="form-login/login.html">ĐĂNG NHẬP</a>
                 </li>
-                <li class="nav-item">
-                    <h1 style="color: blue">Du Học Meiji, Chắp Cánh Những Ước Mơ!</h1>
-                </li>
-                <li id="dropdown" class="nav-item dropdown">
+
+                <li id="dropdown" class="btn btn-success nav-item dropdown">
                     <a class="nav-link dropdown-toggle" href="#" id="username" role="button" data-bs-toggle="dropdown"
                        aria-expanded="false">
                     </a>
@@ -50,6 +67,10 @@
         </div>
     </div>
 </nav>
+<div>
+    <h1 style="text-align: center; color: yellow">DU HỌC MEIJI CHẮP CÁNH CHO NHỮNG ƯỚC MƠ</h1>
+    <h1 style="text-align: center; color: yellow">KHÔNG NGỪNG MANG LẠI NHỮNG GIÁ TRỊ!</h1>
+</div>
 <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
     <div class="modal-dialog">
         <div class="modal-content">
@@ -71,13 +92,14 @@
             </div>
             <div class="modal-footer">
                 <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-                <button type="button" onclick="updateStudent()" class="btn btn-primary" data-bs-dismiss="modal">Up</button>
+                <button type="button" onclick="updateStudent()" class="btn btn-primary" data-bs-dismiss="modal">Up
+                </button>
             </div>
         </div>
     </div>
 </div>
 <!--home-->
-<div style="width: 50%;" class="container">
+<div id="myTable" style="width: 50%;" class="container">
     <div class="row">
         <div class="rounded col-12" style="background-color: #e3e1e5; text-align: center; margin: 20px 20px 20px 20px">
             <div class="input-group mb-3">
@@ -105,7 +127,46 @@
         </div>
     </div>
 </div>
-<p style=" color:white; text-align: center;"> Ở ĐÂY CHÚNG TÔI KHÔNG NGỪNG MANG LẠI NHỮNG GIÁ TRỊ!</p>
+
+<div class="container">
+    <div class="image">
+        <div class="img-items" style="width: 40%; height: 30%">
+            <h4 style="color: #ffffff">Ký hợp đồng với đối tác chiến lược.</h4>
+            <img class="img" src="img/home/anh1.jpg" alt="">
+            <div style="color:#0c0206"><i>chiều qua 25/12 giám đốc đã có cuộc gặp gỡ với phía đối tác từ trường
+                日本東京国際学院</i></div>
+        </div>
+        <div class="img-items" style="width: 40%; height: 30%">
+            <h4 style="color: #ffffff">Học Sinh Tiếp Cận Với Nền Giáo Dục Hiện Đại Và Chất Lượng!</h4>
+            <img class="img" src="img/home/anh2.jpg" alt="">
+            <div style="color:#0c0206"><i>buổi lễ nhập học của du học sinh rất thành công cho một khởi đầu mới trước mắt.</i></div>
+        </div>
+        <div class="img-items" style="width: 40%; height: 30%">
+            <h4 style="color: #ffffff">Giám Đốc Tận Tình Đưa Tiễn Các Em Học Sinh.</h4>
+            <img class="img" src="img/home/anh3.jpg" alt="">
+            <div style="color:#0c0206"><i>trước giờ bay đính thân giám đốc và các giáo viên đã có những lời căn dặn các em.</i></div>
+        </div>
+
+    </div>
+    <div class="image">
+        <div class="img-items" style="width: 40%; height: 30%">
+            <h4 style="color: #ffffff">Gia Đình MEIJI Và Những Hoạt Động Ngoại Khoá!</h4>
+            <img class="img" src="img/home/anh4.jpg" alt="">
+            <div style="color:#0c0206"><i>những chuyến du lịch khám phá thường niên rất vui vẻ và thú vị đã giúp các em gắn kết hơn.</i></div>
+        </div>
+        <div class="img-items" style="width: 40%; height: 30%">
+            <h4 style="color: #ffffff">Những Cuộc Thi Sắc Đẹp Của Gia Đình MEIJI!</h4>
+            <img class="img" src="img/home/anh5.jpg" alt="">
+            <div style="color:#0c0206"><i>ngoài tôn vinh những giá trị tinh thần còn giúp các em tự tin hơn cho những khởi đầu mới</i></div>
+        </div>
+        <div class="img-items" style="width: 40%; height: 30%">
+            <h4 style="color: #ffffff">Những Lỗ Lực Đã Mang Đến Những Thành Công Đầu Tiên!</h4>
+            <img class="img" src="img/home/anh6.jpg" alt="">
+            <div style="color:#0c0206"><i>những học sinh ưu tú đã thi đỗ vào những trường đại học nổi tiếng của xứ hoa anh đào.</i></div>
+        </div>
+    </div>
+</div>
+
 <script>
     // let student1 = new Student(1, "cha beo", 20)
     // let student2 = new Student(2, "hung ", 19)
@@ -156,6 +217,7 @@
         showListStudent()
 
     }
+
     function findById(id) {
         for (let i = 0; i < listStudent.length; i++) {
             if (id === listStudent[i].id) {
@@ -163,6 +225,7 @@
             }
         }
     }
+
     let idUpdate = 0
 
     function showUpdateModal(id) {
@@ -182,23 +245,27 @@
         localStorage.setItem('list_student', JSON.stringify(listStudent))
         showListStudent()
     }
-    function delStudent(id){
+
+    function delStudent(id) {
 
         let check = confirm("ban co chac chan muon xoa khong?")
-        if (check){ for (let i = 0; i < listStudent.length; i++) {
-            if (listStudent[i].id == id){
-                listStudent.splice(i,1)
+        if (check) {
+            for (let i = 0; i < listStudent.length; i++) {
+                if (listStudent[i].id == id) {
+                    listStudent.splice(i, 1)
 
-            } localStorage.setItem('list_student',JSON.stringify(listStudent))
+                }
+                localStorage.setItem('list_student', JSON.stringify(listStudent))
 
-        }
+            }
             showListStudent()
-        }else return showListStudent()
+        } else return showListStudent()
         for (let i = 0; i < listStudent.length; i++) {
-            if (listStudent[i].id == id){
-                listStudent.splice(i,1)
+            if (listStudent[i].id == id) {
+                listStudent.splice(i, 1)
 
-            } localStorage.setItem('list_student',JSON.stringify(listStudent))
+            }
+            localStorage.setItem('list_student', JSON.stringify(listStudent))
 
         }
         showListStudent()
@@ -223,7 +290,8 @@
     })
 </script>
 <!-- Footer -->
-<footer class="text-center text-lg-start  text-muted" style="background-color: aqua; background-image: url('img/A-List-Japan-2022-Footer.jpg')">
+<footer class="text-center text-lg-start  text-muted"
+        style="background-color: aqua; background-image: url('img/footerbc.jpg')">
     <!-- Section: Social media -->
     <section class="d-flex justify-content-center justify-content-lg-between p-4 border-bottom">
         <!-- Left -->
@@ -268,10 +336,7 @@
                     <h6 class="text-uppercase fw-bold mb-4">
                         <i class="fas fa-gem me-3"></i>CÔNG TY TNHH GIÁO DỤC ĐÀO TẠO VÀ TƯ VẤN DU HỌC MEIJI
                     </h6>
-                    <p>
-                        Here you can use rows and columns to organize your footer content. Lorem ipsum
-                        dolor sit amet, consectetur adipisicing elit.
-                    </p>
+
                 </div>
                 <!-- Grid column -->
 
@@ -282,16 +347,16 @@
                         Products
                     </h6>
                     <p>
-                        <a href="#!" class="text-reset">Angular</a>
+                        <a href="#!" class="text-reset">Du Học</a>
                     </p>
                     <p>
-                        <a href="#!" class="text-reset">React</a>
+                        <a href="#!" class="text-reset">Thực Tập Sinh</a>
                     </p>
                     <p>
-                        <a href="#!" class="text-reset">Vue</a>
+                        <a href="#!" class="text-reset">Kỹ Sư</a>
                     </p>
                     <p>
-                        <a href="#!" class="text-reset">Laravel</a>
+                        <a href="#!" class="text-reset">Bảo Lãnh</a>
                     </p>
                 </div>
                 <!-- Grid column -->
@@ -321,7 +386,7 @@
                 <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
                     <!-- Links -->
                     <h6 class="text-uppercase fw-bold mb-4">Contact</h6>
-                    <p><i class="fas fa-home me-3"></i> Hà Nội, HN 00008, VN</p>
+                    <p><i class="fas fa-home me-3"></i> Hà Nội, HN 000084, VN</p>
                     <p>
                         <i class="fas fa-envelope me-3"></i>
                         thuynv102@gmail.com
@@ -344,14 +409,18 @@
     <!-- Copyright -->
 </footer>
 <script>
-    let name = localStorage.getItem("nameKey")
+    let myTable = document.getElementById("myTable");
+    let name = localStorage.getItem("nameKey");
     console.log("name----", name)
     if (name != null) {
         document.querySelector("#login").innerText = "";
         document.querySelector("#register").innerText = "";
         document.querySelector("#username").innerText = name;
+
     } else {
-        document.querySelector("#dropdown").style.display = "none"
+        document.querySelector("#dropdown").style.display = "none";
+        document.querySelector("#myTable").innerHTML = "";
+
     }
 
     function logOut() {

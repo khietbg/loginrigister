@@ -75,12 +75,12 @@
                                        class="form-control form-control-lg"/>
                                 <label class="form-label" id="validate-re">Repeat your password</label>
                             </div>
-                            <div class="form-check d-flex justify-content-center mb-5">
-                                <input class="form-check-input me-2" type="checkbox" value="" id="form2Example3cg"/>
-                                <label class="form-check-label">
-                                    I agree all statements in <a href="#!" class="text-body"><u>Terms of service</u></a>
-                                </label>
-                            </div>
+<!--                            <div class="form-check d-flex justify-content-center mb-5">-->
+<!--                                <input class="form-check-input me-2" type="checkbox" value="" id="form2Example3cg"/>-->
+<!--                                <label class="form-check-label">-->
+<!--                                    I agree all statements in <a href="#!" class="text-body"><u>Terms of service</u></a>-->
+<!--                                </label>-->
+<!--                            </div>-->
                             <div class="d-flex justify-content-center">
                                 <button type="button"
                                         onclick="register()"
@@ -88,7 +88,7 @@
                                     Register
                                 </button>
                             </div>
-                            <p class="text-center text-muted mt-5 mb-0">Have already an account? <a href="#!"
+                            <p class="text-center text-muted mt-5 mb-0">Have already an account? <a href="login.html"
                                                                                                     class="fw-bold text-body"><u>Login
                                 here</u></a></p>
 
@@ -127,7 +127,7 @@
         }
         if (username.trim() === '') {
             console.log('vao if user name ------>')
-            document.getElementById('validate_username').innerHTML = '<label style="color: red">The name is required!</label>'
+            document.getElementById('validate_username').innerHTML = '<label style="color: red">The user name is required!</label>'
             checkValidate = false;
         } else {
             let checkExisted = false;
@@ -149,7 +149,7 @@
         console.log('email --->', email)
         if (email.trim() === '') {
             console.log('vao ìf khong')
-            document.getElementById('validate_mail').innerHTML = '<label style="color: red">The name is required!</label>'
+            document.getElementById('validate_mail').innerHTML = '<label style="color: red">The email is required!</label>'
             checkValidate = false;
         } else {
             console.log('vao else hay khong')
@@ -174,7 +174,7 @@
             }
         }
         if (password.trim() === '') {
-            document.getElementById('validate-password').innerHTML = '<label style="color: red">The name is required!</label>'
+            document.getElementById('validate-password').innerHTML = '<label style="color: red">The password is required!</label>'
             checkValidate = false;
         } else {
             if (rePassword !== password) {

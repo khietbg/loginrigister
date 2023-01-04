@@ -12,7 +12,7 @@
 <head>
     <meta charset="UTF-8">
     <title>Title</title>
-    <script src="Student.js"></script>
+    <script src="form-login/Student.js"></script>
 </head>
 <style>
     .image {
@@ -30,12 +30,16 @@
         height: 250px;
         width: 300px;
     }
+
+    .container {
+        display: flex;
+    }
 </style>
 <body style=" background-image: url('img/home/anh10.jpg');background-size: 2700px 1500px">
 <nav class="navbar navbar-expand-lg navbar-light"
      style=" backdrop-filter: blur(8px);background-size: 2000px; background-color: #cebad0; height: 70px; background-image: url('img/home/anh20.jpg')">
     <div class="container-fluid">
-        <a class=" navbar-brand; btn btn-danger" style="font-family: Phosphate" >DU HỌC MEIJI</a>
+        <a class=" navbar-brand; btn btn-danger" style="font-family: Phosphate">DU HỌC MEIJI</a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
                 aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
@@ -48,6 +52,9 @@
                 </li>
                 <li class="nav-item">
                     <a id="login" class="nav-link" href="form-login/login.html">ĐĂNG NHẬP</a>
+                </li>
+                <li class="nav-item">
+                    <a id="ProductManage" class="nav-link" href="product.html">Product Manege</a>
                 </li>
 
                 <li id="dropdown" class="btn btn-success nav-item dropdown">
@@ -67,9 +74,11 @@
         </div>
     </div>
 </nav>
-<marquee style=" scrolldelay:100; font-family: American Typewriter; color:#3f2c33 ;background-color: #eaea53" behavior="" direction="left"><h4>DU HỌC MEIJI CHẮP CÁNH CHO NHỮNG ƯỚC MƠ BAY XA!</h4></marquee>
-<div>
-    <marquee style=" scrolldelay:100; font-family: American Typewriter; color:#3f2c33 ;background-color: #dada6f" behavior="" direction="right"><h4>Ở ĐÂY CHÚNG TÔI KHÔNG NGỪNG MANG ĐẾN NHỮNG GIÁ TRỊ!</h4></marquee>
+<marquee style=" scrolldelay:100; font-family: American Typewriter; color:#422005 ;background-color: #9aa888"
+         behavior=""
+         direction="left1"><h4>DU HỌC MEIJI CHẮP CÁNH CHO NHỮNG ƯỚC MƠ BAY XA!</h4></marquee>
+<div style="color: #e0130b; text-align: center; font-family: 'American Typewriter'">
+    <h3>Ở ĐÂY CHÚNG TÔI KHÔNG NGỪNG MANG ĐẾN NHỮNG GIÁ TRỊ!</h3>
 
 </div>
 <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
@@ -100,7 +109,7 @@
     </div>
 </div>
 <!--home-->
-<div id="myTable" style="width: 50%;" class="container">
+<div id="myTable" style="width: 800px;" class="container">
     <div class="row">
         <div class="rounded col-12" style="background-color: #e3e1e5; text-align: center; margin: 20px 20px 20px 20px">
             <div class="input-group mb-3">
@@ -114,7 +123,7 @@
                 <span class="input-group-text" id="basic-addon2">Age</span>
             </div>
             <button onclick="createStudent()" class="btn btn-success">Create Student</button>
-            <table class="table">
+            <table class="table" style="width: 800px">
                 <tr class="table-primary">
                     <th>STT</th>
                     <th>NAME</th>
@@ -128,46 +137,110 @@
         </div>
     </div>
 </div>
-
 <div class="container">
-    <div class="image">
-        <div class="img-items" style="width: 40%; height: 30%">
-            <h4 style="color: #ffffff">Ký hợp đồng với đối tác chiến lược.</h4>
-            <img class="img" src="img/home/anh1.jpg" alt="">
-            <div style="color:#0c0206"><i>chiều qua 25/12 giám đốc đã có cuộc gặp gỡ với phía đối tác từ trường
-                日本東京国際学院</i></div>
+    <div class="main">
+        <div class="image">
+            <div class="img-items" style="width: 40%; height: 30%">
+                <h4 style="color: #ffffff">Ký hợp đồng với đối tác chiến lược.</h4>
+                <img class="img" src="img/home/anh1.jpg" alt="">
+                <div style="color:#ffffff"><i>chiều qua 25/12 giám đốc đã có cuộc gặp gỡ với phía đối tác từ trường
+                    日本東京国際学院</i></div>
+            </div>
+            <div class="img-items" style="width: 40%; height: 30%">
+                <h4 style="color: #ffffff">Tiếp Cận Với Nền Giáo Dục Hiện Đại Và Chất Lượng!</h4>
+                <img class="img" src="img/home/anh2.jpg" alt="">
+                <div style="color:#ffffff"><i>buổi lễ nhập học của du học sinh rất thành công cho một khởi đầu mới trước
+                    mắt.</i></div>
+            </div>
+
         </div>
-        <div class="img-items" style="width: 40%; height: 30%">
-            <h4 style="color: #ffffff">Học Sinh Tiếp Cận Với Nền Giáo Dục Hiện Đại Và Chất Lượng!</h4>
-            <img class="img" src="img/home/anh2.jpg" alt="">
-            <div style="color:#0c0206"><i>buổi lễ nhập học của du học sinh rất thành công cho một khởi đầu mới trước mắt.</i></div>
+        <div class="image">
+            <div class="img-items" style="width: 40%; height: 30%">
+                <h4 style="color: #ffffff">Gia Đình MEIJI Và Những Hoạt Động Ngoại Khoá!</h4>
+                <img class="img" src="img/home/anh4.jpg" alt="">
+                <div style="color:#ffffff"><i>những chuyến du lịch khám phá vô cùng lý thú đã giúp các em
+                    gắn kết hơn trong học tập cũng như cuộc sống.</i></div>
+            </div>
+            <div class="img-items" style="width: 40%; height: 30%">
+                <h4 style="color: #ffffff">Những Cuộc Thi Sắc Đẹp Của Gia Đình MEIJI!</h4>
+                <img class="img" src="img/home/anh5.jpg" alt="">
+                <div style="color:#ffffff"><i>Không chỉ tôn vinh những giá trị tinh thần, mà còn giúp các em tự tin hơn
+                    để khởi đầu cho một hành trình dài sắp tới.</i></div>
+            </div>
         </div>
-        <div class="img-items" style="width: 40%; height: 30%">
-            <h4 style="color: #ffffff">Giám Đốc Tận Tình Đưa Tiễn Các Em Học Sinh.</h4>
-            <img class="img" src="img/home/anh3.jpg" alt="">
-            <div style="color:#0c0206"><i>trước giờ bay đính thân giám đốc và các giáo viên đã có những lời căn dặn các em.</i></div>
+        <div class="image">
+            <div class="img-items" style="width: 40%; height: 30%">
+                <h4 style="color: #ffffff">Giám Đốc Tận Tình Đưa Tiễn Và Có Những Lời Chúc May Mắn Dành Cho Các Em.</h4>
+                <img class="img" src="img/home/anh3.jpg" alt="">
+                <div style="color:#ffffff"><i>trước giờ bay đính thân giám đốc và các giáo viên đã có những lời căn dặn
+                    cũng như động viên các em.</i></div>
+            </div>
+            <div class="img-items" style="width: 40%; height: 30%">
+                <h4 style="color: #ffffff">Những Nỗ Lực Đã Mang Đến Những Thành Công Ngọt Ngào Đầu Tiên!</h4>
+                <img class="img" src="img/home/anh6.jpg" alt="">
+                <div style="color:#ffffff"><i>Những nỗ lực không biết mệt, các học sinh ưu tú của gia đình Meiji, xuất
+                    sắc đỗ vào những trường đại học nổi tiếng của xứ hoa
+                    anh đào.</i></div>
+            </div>
         </div>
 
     </div>
-    <div class="image">
-        <div class="img-items" style="width: 40%; height: 30%">
-            <h4 style="color: #ffffff">Gia Đình MEIJI Và Những Hoạt Động Ngoại Khoá!</h4>
-            <img class="img" src="img/home/anh4.jpg" alt="">
-            <div style="color:#0c0206"><i>những chuyến du lịch khám phá thường niên rất vui vẻ và thú vị đã giúp các em gắn kết hơn.</i></div>
-        </div>
-        <div class="img-items" style="width: 40%; height: 30%">
-            <h4 style="color: #ffffff">Những Cuộc Thi Sắc Đẹp Của Gia Đình MEIJI!</h4>
-            <img class="img" src="img/home/anh5.jpg" alt="">
-            <div style="color:#0c0206"><i>ngoài tôn vinh những giá trị tinh thần còn giúp các em tự tin hơn cho những khởi đầu mới</i></div>
-        </div>
-        <div class="img-items" style="width: 40%; height: 30%">
-            <h4 style="color: #ffffff">Những Lỗ Lực Đã Mang Đến Những Thành Công Đầu Tiên!</h4>
-            <img class="img" src="img/home/anh6.jpg" alt="">
-            <div style="color:#0c0206"><i>những học sinh ưu tú đã thi đỗ vào những trường đại học nổi tiếng của xứ hoa anh đào.</i></div>
+
+    <div class="side-bar" style="width: 40%; height: 30%">
+        <h2 style="color:orangered">Thông Tin Hot...!</h2>
+        <div id="imgDiv"></div>
+        <div class="container">
+            <div class="row" id="drawProduct">
+                <!--        <div class="col">-->
+                <!--            Column-->
+                <!--        </div>-->
+                <!--        <div class="col">-->
+                <!--            Column-->
+                <!--        </div>-->
+                <!--        <div class="col">-->
+                <!--            Column-->
+                <!--        </div>-->
+            </div>
+
         </div>
     </div>
+
 </div>
-
+<script>
+    let idUser = parseInt(localStorage.getItem("idKey"))
+    let listProduct = JSON.parse(localStorage.getItem("list_product"))
+    if (listProduct === null){
+        listProduct = []
+    }
+    function createProduct() {
+        let name = document.getElementById("name").value;
+        let price = document.getElementById("price").value;
+        let image = getImage();
+        let id = 0
+        if (listProduct.length===0){
+            id = 1
+        }else {
+            id = listProduct[listProduct.length-1] + 1;
+        }
+        let product = new Product(id,name,price,image,idUser)
+        listProduct.push(product)
+        localStorage.removeItem("list_product")
+        localStorage.setItem("list_product",JSON.stringify(listProduct))
+        showListStudent()
+    }
+    function ShowListProduct() {
+        let drawProduct ='';
+        for (let i = 0; i < listProduct.length; i++) {
+            drawProduct +=`
+            <div class ="col">
+            <h4 style="color: orange">${listProduct[i].name}</h4>
+<img src="${listProduct[i].image}"alt="">
+<p style="color: white">${listProduct[i].price}</p>`
+        }
+        document.getElementById('drawProduct').innerHTML = drawProduct;
+    }
+    ShowListProduct()
+</script>
 <script>
     // let student1 = new Student(1, "cha beo", 20)
     // let student2 = new Student(2, "hung ", 19)
@@ -292,7 +365,7 @@
 </script>
 <!-- Footer -->
 <footer class="text-center text-lg-start  text-muted"
-        style="background-color: aqua; background-image: url('img/footerbc.jpg')">
+        style="background-color: aqua; background-image: url('img/home/footerbc.jpg')">
     <!-- Section: Social media -->
     <section class="d-flex justify-content-center justify-content-lg-between p-4 border-bottom">
         <!-- Left -->
@@ -410,6 +483,7 @@
     <!-- Copyright -->
 </footer>
 <script>
+    let ProductManage = document.getElementById("ProductManage")
     let myTable = document.getElementById("myTable");
     let name = localStorage.getItem("nameKey");
     console.log("name----", name)
@@ -421,6 +495,7 @@
     } else {
         document.querySelector("#dropdown").style.display = "none";
         document.querySelector("#myTable").innerHTML = "";
+        document.querySelector("#ProductManage").innerHTML = "";
 
     }
 
